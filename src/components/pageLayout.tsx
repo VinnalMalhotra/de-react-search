@@ -32,7 +32,7 @@ const PageLayout = ({ _site, children }: Props) => {
       {typeof window !== 'undefined' && import.meta.env.YEXT_PUBLIC_CHAT_APIKEY &&
         import.meta.env.YEXT_PUBLIC_CHAT_BOTID && (
           <ChatHeadlessProvider config={chatConfig}>
-            <ChatPopUp messageSuggestions={["1-1/4'' KNOCKOUT PUNCH", "KNOCKOUT PUNCHES AND DIES KIT"]}
+            <ChatPopUp messageSuggestions={["1-1/4'' KNOCKOUT PUNCH", "KNOCKOUT PUNCHES AND DIES KIT", "DEWALT POWERSHIFT™ RAMMER WHEEL KIT"]}
               title="DEWALT® Support"
               stream={false}
               customCssClasses={{
