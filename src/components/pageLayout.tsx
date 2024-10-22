@@ -33,7 +33,7 @@ const PageLayout = ({ _site, children }: Props) => {
         import.meta.env.YEXT_PUBLIC_CHAT_BOTID && (
           <ChatHeadlessProvider config={chatConfig}>
             <ChatPopUp
-              title="Cook Children Chat"
+              title="DEWALT® Support"
               stream={false}
               customCssClasses={{
                 buttonIcon: "text-white",
