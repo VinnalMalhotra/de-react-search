@@ -1,0 +1,141 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --yxt-color-borders: #d8d8d8;
+  --yxt-color-error: #940000;
+  --yxt-color-text-primary: #212121;
+  --yxt-color-text-secondary: #757575;
+  --yxt-base-spacing: 20px;
+  --yxt-border-default: 1px solid var(--yxt-color-borders);
+  --yxt-border-radius: 5px;
+  --yxt-font-family: Helvetica, Arial, sans-serif;
+}
+
+.body {
+  font-family: var(--yxt-font-family);
+}
+
+.centered-container {
+  @apply mx-auto px-2 md:px-14 max-w-screen-xl;
+}
+
+.section {
+  @apply mt-8 mb-16;
+}
+
+h2 {
+  @apply !text-[var(--yxt-color-text-primary)];
+}
+
+/* Cards Config*/
+.cards {
+  padding: calc(var(--yxt-base-spacing) * 3 / 4) var(--yxt-base-spacing);
+}
+
+.cards:not(:last-child) {
+  border: 0px;
+  border-bottom: var(--yxt-border-default);
+}
+.standardTitle {
+  margin-bottom: 0.5em;
+  color: #000;
+  font-size: 1.3rem;
+  font-weight: bold;
+}
+
+.standardSubTitle {
+  color: var(--yxt-color-text-secondary);
+  padding-bottom: 0;
+}
+
+.standardCardDetails {
+  margin-top: calc(var(--yxt-base-spacing) / 2);
+}
+
+/* Map pin config */
+.mapPin {
+  fill: black;
+}
+
+.mapPinText {
+  fill: white;
+}
+
+/*CTA Config*/
+.primaryCta {
+  /* background: white; */
+  color: black;
+  /* border-color: black; */
+  padding: 12px 24px;
+    background-color: #febd17;
+    border: 1px solid #febd17;
+    border-radius: 0;
+    min-width: 0;
+    font-family: Helvetica, Arial;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 700;
+
+  &:hover {
+    color: #febd17;
+    background-color: black;
+    /* border-color: white; */
+    /* background-color: #c68d00; */
+        border: 1px solid #c68d00;
+        border-radius: 0;
+        font-family: Helvetica, Arial;
+        font-size: 16px;
+        line-height: 24px;
+        font-weight: 700;
+  }
+}
+.secondaryCta {
+  background: white;
+  color: black;
+  border-color: black;
+
+  &:hover {
+    color: white;
+    background-color: black;
+    border-color: white;
+  }
+}
+
+.p-6 {
+  background-color: #000000;
+  padding: 0.6rem;
+}
+
+.w-auto
+{
+  height: 100%;
+  width: 9em;
+  display: block;
+  margin-left: 2em;
+}
+
+.text-primary {
+  --tw-text-opacity: 1;
+  /* margin-right: 50em; */
+  color: #FEBD17;
+  /* color: rgb(0 92 185 / var(--tw-text-opacity)); */
+}
+
+.text-2xl {
+  font-size: 1rem;
+  line-height: 2rem;
+  margin-right: 50em;
+}
+
+.text-gray-500
+{
+  color: #000000;
+  /* &:hover {
+    color: #FEBD17;
+    background-color: black;
+    text-decoration: underline;
+    padding: 0.2em;
+  } */
+}
