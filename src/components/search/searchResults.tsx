@@ -10,6 +10,7 @@ import {
   SpellCheck,
   UniversalResults,
   DirectAnswer,
+  GenerativeDirectAnswer,
 } from "@yext/search-ui-react";
 import { UniversalConfig, VerticalConfig } from "../../config/VerticalConfig";
 import "mapbox-gl/dist/mapbox-gl.css";
@@ -78,7 +79,7 @@ const SearchResults = () => {
             <>
               {universalResultsLength >= 1 ? (
                 <>
-                  <DirectAnswer></DirectAnswer>
+                  <GenerativeDirectAnswer customCssClasses={{container:"centered-container"}}/>
                   <UniversalResults
                     verticalConfigMap={UniversalConfig}
                     customCssClasses={{
