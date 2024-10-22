@@ -1,6 +1,8 @@
-import Cta from "../components/cta";
-// import ProfessionalsOnlyPage from "./pages/ProfessionalsOnlyPage";
 
+import { FaRegUserCircle } from "react-icons/fa";
+import { IoIosSearch } from "react-icons/io";
+import { FiMapPin } from "react-icons/fi";
+import { CiGlobe } from "react-icons/ci";
 type Link = {
   label: string;
   url: string;
@@ -36,13 +38,13 @@ const Header = ({ _site }: any) => {
   ));
 
   return (
-    <div className="p-6 flex justify-between items-center w-full max-w-screen-3xl">
+    <div className="p-6 flex justify-start items-center w-full max-w-screen-3xl bg-black">
       <img
         src="https://www.dewalt.com/sites/g/files/xnuzat961/files/dewalt2024_logo.png"
         alt=""
-        className="w-auto h-20"
+        className="w-28 h-auto"
       />
-      <div className="flex gap-8 items-center text-2xl text-primary">
+      <div className="flex gap-4 items-center text-lg  text-primary ml-8">
         {links.map((item: Link, index: any) => (
           <a
             href={item.url}
@@ -52,6 +54,12 @@ const Header = ({ _site }: any) => {
             {item.label}
           </a>
         ))}
+      </div>
+      <div className="flex gap-6 items-center mr-8 ml-auto">
+        <IoIosSearch className="w-6 h-6 text-[#FEBD17]" />
+        <FiMapPin className="w-6 h-6 text-[#FEBD17]" />
+        <CiGlobe className="w-6 h-6 text-[#FEBD17]" />
+        <FaRegUserCircle className="w-6 h-6 text-[#FEBD17]" />
       </div>
     </div>
   );

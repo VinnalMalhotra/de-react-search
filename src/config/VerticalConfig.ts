@@ -34,13 +34,13 @@ export const VerticalConfig: VerticalProps[] = [
     cardType: FAQAccordion,
     universalLimit: 3,
   },
-  // {
-  //   label: "Professionals",
-  //   key: "financial-professional",
-  //   pageType: "grid-cols-3",
-  //   cardType: ProfessionalLocationAndGrid,
-  //   universalLimit: 3,
-  // },
+  {
+    label: "Retailer",
+    key: "find-a-retailer",
+    pageType: "grid-cols-3",
+    cardType: ProductProminentImage,
+    universalLimit: 3,
+  },
   {
     label: "Locations",
     key: "location",

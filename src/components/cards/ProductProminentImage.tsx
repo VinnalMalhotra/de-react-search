@@ -29,7 +29,7 @@ const ProductProminentImage = ({ result }: CardProps<Product>) => {
     c_category,
   } = result.rawData;
   return (
-    <article id={`location-card-${id}`} className={`border rounded-lg `}>
+    <article id={`location-card-${id}`} className={`border rounded-lg pb-4`}>
       <header className={`relative flex flex-col `}>
         <a
           href={landingPageUrl}
@@ -38,7 +38,7 @@ const ProductProminentImage = ({ result }: CardProps<Product>) => {
           {primaryPhoto && (
             <Image
               image={primaryPhoto!}
-              className="pointer-events-none object-cover group-hover:opacity-75 "
+              className="pointer-events-none object-cover group-hover:opacity-75 !h-full !w-full !max-w-none"
             />
           )}
         </a>
